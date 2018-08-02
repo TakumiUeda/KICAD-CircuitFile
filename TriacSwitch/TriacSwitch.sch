@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:TriacSwitch-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -238,12 +239,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 2450 3800 2450
 Wire Wire Line
-	3800 2450 3800 2800
-Wire Wire Line
-	3200 2800 5400 2800
-Connection ~ 4000 2800
-Connection ~ 3800 2800
-Wire Wire Line
 	3200 2000 3350 2000
 Connection ~ 4000 2000
 Wire Wire Line
@@ -270,8 +265,6 @@ F 3 "" H 1450 3600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4000 2800 4000 2500
-Wire Wire Line
 	4000 2200 4000 2000
 Connection ~ 5050 2000
 Wire Wire Line
@@ -289,4 +282,12 @@ Wire Wire Line
 	1650 3500 1950 3500
 Text Label 1950 3500 0    60   ~ 0
 Load
+Wire Wire Line
+	3800 2450 3800 2800
+Wire Wire Line
+	3800 2800 3200 2800
+Wire Wire Line
+	4000 2500 4000 2800
+Wire Wire Line
+	4000 2800 5400 2800
 $EndSCHEMATC
